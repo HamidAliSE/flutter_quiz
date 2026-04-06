@@ -29,7 +29,7 @@ class QuestionsScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 30),
-            ...questions[0].answers.map(
+            ...questions[0].shuffledAnswers.map(
               (answer) => AnswerButton(text: answer, onPressed: answerQuestion),
             ),
           ],
