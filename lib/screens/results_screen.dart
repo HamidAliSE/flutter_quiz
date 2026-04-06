@@ -50,8 +50,9 @@ class ResultsScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 20),
             QuestionsSummary(summaryData: summaryData),
+            SizedBox(height: 20),
             TextButton.icon(
               onPressed: onPressRestartQuiz,
               style: TextButton.styleFrom(foregroundColor: Colors.white),
