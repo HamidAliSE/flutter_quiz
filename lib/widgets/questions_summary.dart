@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_quiz/widgets/question_identifier.dart';
+import 'package:flutter_quiz/widgets/summary_item.dart';
 
 class QuestionsSummary extends StatelessWidget {
   const QuestionsSummary({super.key, required this.summaryData});
@@ -10,18 +10,7 @@ class QuestionsSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
-        ...summaryData.map(
-          (data) => Row(
-            children: [
-              QuestionIdentifier(
-                index: data['index'] as int,
-                isCorrectAnswer: data['userAnswer'] == data['correctAnswer'],
-              ),
-            ],
-          ),
-        ),
-      ],
+      children: [...summaryData.map((data) => SummaryItem(data: data))],
     );
   }
 }
