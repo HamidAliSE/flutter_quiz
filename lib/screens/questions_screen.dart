@@ -31,6 +31,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
       child: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
               questions[_currentQuestionIndex].text,
