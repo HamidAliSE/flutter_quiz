@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_quiz/screens/start_screen.dart';
+
 class Quiz extends StatelessWidget {
   const Quiz({super.key});
 
@@ -18,19 +20,7 @@ class Quiz extends StatelessWidget {
               end: Alignment.bottomRight,
             ),
           ),
-          child: Center(
-            child: Column(
-              children: [
-                Image.asset('assets/images/quiz-logo.png'),
-                Text('Learn Flutter the fun way!'),
-                OutlinedButton.icon(
-                  onPressed: () {},
-                  icon: Icon(Icons.arrow_forward),
-                  label: Text('Start Quiz'),
-                ),
-              ],
-            ),
-          ),
+          child: StartScreen(),
         ),
       ),
     );
